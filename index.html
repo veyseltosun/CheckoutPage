@@ -21,15 +21,17 @@
         <section class="form-container">
           <form action="result.html" method="GET" target="_blank">
             <div class="contact-info">
-                <label for="contact-info">Contact information</label>
+                <label class='label' for="contact-info">Contact information</label>
                 <div id="email">
                     <label for="email">Email</label>
+                    <br>
                     <input type="email" name='email' id='email' placeholder="Enter your email...">
                     <i class="fas fa-envelope"></i>
                 </div>
                 <div id="phone">
                     
-                    <label for="phone">Email</label>
+                    <label for="phone">Phone</label>
+                    <br>
                     <input type="number" name='phone' id='phone' placeholder="Enter your phone...">
                     
                     <i class="fas fa-phone-alt" aria-hidden="true"> </i>
@@ -38,16 +40,19 @@
                 </div>
             </div>
             <div class="shipping-add">
-                <label for="shipping-add"> Shipping address</label>
+                <label class='label' for="shipping-add"> Shipping address</label>
                 <div id="name">
                     <label for="name">Full name</label>
-                    <input type="text" name="name" id="name">
+                    <br>
+                    <input type="text" name="name" id="name" placeholder="Enter your Full name...">
                     <i class="fas fa-user" aria-hidden="true"></i>
 
                 </div>
                 <div id="address">
+                    
                     <label for="adress">Adress</label>
-                    <input type="text" name="address" id="address">
+                    <br>
+                    <input type="text" name="address" id="address" placeholder="Enter your address...">
                     <i class="fas fa-home" aria-hidden="true"></i>
 
 
@@ -62,13 +67,19 @@
         <div class="product-preview">
             <div id="bag">
                 <h3>Vintage Backbag</h3>
-                <img id="bag-pic" idsrc="./assets/photo1.png" alt="bagpic">
-                <button id="minus">-</button > <p id="count1"></p> <button id="plus">+</button>
+                <img id="bag-pic" src="./assets/photo1.png" alt="bagpic">
+                <div class="button">
+                    <button id="minus">-</button > <p id="count1">1</p> <button id="plus">+</button>
+                </div>
+                
             </div>
             <div id="shoes">
-                <h3>Veyi Shoes</h3>
+                <h3>Veto Shoes</h3>
                 <img id="shoes-pic" src="./assets/photo2.png" alt="shoes">
-                <button id="minus">-</button > <p id="count2"></p> <button id="plus">+</button>
+                <div class="button">
+                    <button id="minus">-</button > <p id="count2">1</p> <button id="plus">+</button>
+                </div>
+                
             </div>
             <div id="ship-price"></div>
             <div id="total-price"></div>
