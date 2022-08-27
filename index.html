@@ -22,13 +22,13 @@
           <form action="result.html" method="GET" target="_blank">
             <div class="contact-info">
                 <label class='label' for="contact-info">Contact information</label>
-                <div id="email">
+                <div id="email-container">
                     <label for="email">Email</label>
                     <br>
                     <input type="email" name='email' id='email' placeholder="Enter your email...">
                     <i class="fas fa-envelope"></i>
                 </div>
-                <div id="phone">
+                <div id="phone-container">
                     
                     <label for="phone">Phone</label>
                     <br>
@@ -41,14 +41,14 @@
             </div>
             <div class="shipping-add">
                 <label class='label' for="shipping-add"> Shipping address</label>
-                <div id="name">
+                <div id="name-container">
                     <label for="name">Full name</label>
                     <br>
                     <input type="text" name="name" id="name" placeholder="Enter your Full name...">
                     <i class="fas fa-user" aria-hidden="true"></i>
 
                 </div>
-                <div id="address">
+                <div id="address-container">
                     
                     <label for="adress">Adress</label>
                     <br>
@@ -57,8 +57,48 @@
 
 
                 </div>
+                <div id="city-container">
+                    
+                    <label for="adress">City</label>
+                    <br>
+                    <input type="text" name="city" id="city" placeholder="Enter your city...">
+                    <i class="fas fa-city" aria-hidden="true"></i>
+
+
+                </div>
+                <div id="country-container">
+                    
+                    <label for="country">Country</label>
+                    <br>
+                    <select name="country" id="country" >
+                        <option value="Turkey">Turkey</option>
+                        <option value="Turkey">Germany</option>
+                        <option value="Turkey">USA</option>
+                        <option value="Turkey">Canada</option>
+                        <option value="Turkey">UK</option>
+                    </select>
+                    <i class="fas fa-globe-europe" aria-hidden="true"></i>
+
+
+                </div>
+                <div id="post-code-container">
+                    
+                    <label for="post-code">Post Code</label>
+                    <br>
+                    <input type="number" name='post-code' id='post' placeholder="Enter your postal code...">
+                    
+                    <i class="fas fa-mail-bulk" aria-hidden="true"></i>
+                    <!-- <i class="fa-regular fa-phone"></i> -->
+                    
+                </div>
+                <div class="info-container">
+                    <input type="checkbox" name="info" id="reminder" value="See this information next time !">
+                    <label for="reminder">See this information next time !</label>
+                </div>
 
             </div>
+
+            <button id="btn-submit" type="submit"> Continue </button>
 
 
 
