@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main-container{
+    
+    align-items:flex-start;
+    
+
+}
+.form-container{
+    background-color: rgba(0, 0, 0, 0.1);
+    
+    max-width: 400px;
+    
+    
+    
+    
+    
+
+
+}
+.product-preview{
+    background-color: rgba(0, 0, 0, 0.3);
+    height: 200px;
+    max-width: 200px;
+    
+
+}

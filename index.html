@@ -4,12 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="https://cdn.dsmcdn.com/web/production/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <title>Checkout Page </title>
     <meta name="description" content="Giyim, bilgisayar, cep telefonu, kozmetik, beyaz eşya, süpermarket &amp; daha aradığın yüz binlerce indirimli ürün en uygun fiyatlar ve kampanyalarla Checkout'da.">
 </head>
 <body>
+    <main class="main-container">
+        <header class="header">
+            <h1>Checkout</h1>
+        </header>
+        <section class="form-container">
+          <form action="result.html" method="GET" target="_blank">
+            <div class="contact-info">
+                <label for="contact-info">Contact information</label>
+                <div id="email">
+                    <label for="email">Email</label>
+                    <input type="email" name='email' id='email' placeholder="Enter your email...">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div id="phone">
+                    
+                    <label for="phone">Email</label>
+                    <input type="number" name='phone' id='phone' placeholder="Enter your phone...">
+                    
+                    <i class="fas fa-phone-alt" aria-hidden="true"> </i>
+                    <!-- <i class="fa-regular fa-phone"></i> -->
+                    
+                </div>
+            </div>
+            <div class="shipping-add">
+                <label for="shipping-add"> Shipping address</label>
+                <div id="name">
+                    <label for="name">Full name</label>
+                    <input type="text" name="name" id="name">
+                    <i class="fas fa-user" aria-hidden="true"></i>
+
+                </div>
+                <div id="address">
+                    <label for="adress">Adress</label>
+                    <input type="text" name="address" id="address">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+
+
+                </div>
+
+            </div>
+
+
+
+          </form>
+        </section>
+        <div class="product-preview">
+            <div id="bag">
+                <h3>Vintage Backbag</h3>
+                <img id="bag-pic" idsrc="./assets/photo1.png" alt="bagpic">
+                <button id="minus">-</button > <p id="count1"></p> <button id="plus">+</button>
+            </div>
+            <div id="shoes">
+                <h3>Veyi Shoes</h3>
+                <img id="shoes-pic" src="./assets/photo2.png" alt="shoes">
+                <button id="minus">-</button > <p id="count2"></p> <button id="plus">+</button>
+            </div>
+            <div id="ship-price"></div>
+            <div id="total-price"></div>
+        </div>
+
+    </main>
     
 </body>
 </html>
