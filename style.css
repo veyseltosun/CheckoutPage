@@ -172,7 +172,7 @@ i{
 
 
 .product-preview{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
     
     /* max-width: 450; */
     width: 40%;
@@ -182,6 +182,9 @@ i{
     padding: 20px;
     border-radius: 5px;
     float: left;
+    /* display: flex;
+    flex-direction: column; */
+;
     
     
    
@@ -205,8 +208,14 @@ i{
     margin:3px;
 
 }
+.new1{
+    display: flex;
+    flex-direction: column;
+}
 h3{
     position: relative;
+    display: block;
+    margin-bottom: 30px;
     
     
 }
@@ -214,8 +223,11 @@ h3{
     position: relative;
     display: flex;
     flex-direction: row;
-    width:auto;
+    /* width:auto; */
     margin: auto;
+    margin-bottom: 10px;
+    /* right:60px; */
+    display: inline;
     
     
 }
@@ -223,12 +235,26 @@ h3{
     position: relative;
     display: flex;
     flex-direction: row;
-    width: auto;
+    /* width: auto; */
+    /* right:40px; */
 
     margin: auto;
-    ri
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: inline;
     
     
+    
+}
+.red{
+    color:brown ;
+    text-decoration: ;
+    font-size:large;
+    margin-right: 20px;
+}
+.line{
+    text-decoration: line-through;
+    font-size: small;
 }
 #shoes{
     position: relative;
@@ -249,10 +275,10 @@ h3{
     background-color: white;
     border-radius: 3px;
     height: auto;
-    max-width:90px;
+    max-width:100%;
     
     
-    position: relative;
+    position:relative;
     align-items: center;
     margin: auto;
     padding: 2%;
@@ -260,7 +286,9 @@ h3{
     display: flex;
     flex-direction: row;
     text-align: center;
-    
+    /* left: -100px; */
+    /* bottom: -40px;
+     */
 
     
 }
@@ -268,6 +296,8 @@ button{
     border: none;
     background-color: white;
     color: black;
+   width: 40px;
+   margin-left: 5px;
     
 }
 #count2{
