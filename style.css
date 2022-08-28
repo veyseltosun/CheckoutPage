@@ -35,13 +35,17 @@ h1{
 
 }
 .bg{
-    display: none;
+    
     opacity: 0.3;
     z-index: -1;
     position: absolute;
 }
+.fixed{
+    display: inline;
+    position: fixed;
+}
 .form-container{
-    background-color: rgba(0, 0, 0, 0.1);
+    /* background-color: rgba(0, 0, 0, 0.1); */
     
     /* max-width: 500px; */
     margin: 30px;
