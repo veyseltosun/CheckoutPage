@@ -18,6 +18,7 @@
         <h1>Checkout</h1>
     </header>
     <main class="main-container">
+        <img class="bg"src="./assets/salesforce-e-commerce.jpg" alt="bg">
        
         <section class="form-container">
           <form action="result.html" method="GET" target="_blank">
@@ -107,23 +108,38 @@
         </section>
         <div class="product-preview">
             <div id="bag">
-                <h3>Vintage Backbag</h3>
                 <img id="bag-pic" src="./assets/photo1.png" alt="bagpic">
+                <h3>Vintage Backbag</h3>
+                <div class="bag-price-c">
+                    <p class="red">$54.99</p>
+                    <p class="line">$94.99</p>
+                </div>
+                
                 <div class="button">
                     <button id="minus">-</button > <p id="count1">1</p> <button id="plus">+</button>
                 </div>
                 
             </div>
             <div id="shoes">
-                <h3>Veto Shoes</h3>
                 <img id="shoes-pic" src="./assets/photo2.png" alt="shoes">
+                <h3>Veto Shoes</h3>
+                <div class="shoes-price-c">
+                  <p class="red">$74.99</p>
+                  <p class="line">$124.99</p>
+                </div>
+                
                 <div class="button">
                     <button id="minus">-</button > <p id="count2">1</p> <button id="plus">+</button>
                 </div>
                 
             </div>
-            <div id="ship-price"></div>
-            <div id="total-price"></div>
+            <div id="ship-price">
+                <p class="tt">Shipping price  </p>
+                <p class="pr">19$ </p>
+            <div id="total-price">
+                <p class="tt">Total price</p>
+                <p class="pr">148,98$</p>
+            </div>
         </div>
 
     </main>

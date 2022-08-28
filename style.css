@@ -6,7 +6,11 @@
 
 }
 
-#header{ 
+.header{ 
+    align-items: center;
+    width: 50px;
+    position: relative;
+    margin: auto;
 
     
     
@@ -24,16 +28,29 @@ h1{
 
 .main-container{
     display: flex;
+    
+   
    
    
 
+}
+.bg{
+    display: none;
+    opacity: 0.3;
+    z-index: -1;
+    position: absolute;
 }
 .form-container{
     background-color: rgba(0, 0, 0, 0.1);
     
     /* max-width: 500px; */
     margin: 30px;
+    margin-left: 40px;
     width: 45%;
+    position: relative;
+    border-radius: 5px;
+
+    
     
   
     
@@ -46,36 +63,9 @@ h1{
 
 
 }
-.product-preview{
-    background-color: rgba(0, 0, 0, 0.3);
-    
-    /* max-width: 450; */
-    width: 40%;
-    margin:30px 20px 30px 10px;
-    
-    padding: 20px;
-    border-radius: 5px;
-    float: left;
-    height: 80vh;
-    
-   
 
-    
-    
 
-}
 
-.button{
-    border: solid 1px black;
-    border-radius: 5px;
-    max-width: 70px;
-    position: relative;
-    align-items: center;
-    margin: auto;
-    cursor: pointer;
-
-    
-}
 .label{
     font-size:1.5rem;
 }
@@ -86,18 +76,21 @@ h1{
     
     
     margin: auto;
+    position: relative;
 
 }
 .shipping-add{
     padding: 10px;
-    height: auto;
+    position: relative;
+    
    
     margin: auto;
 }
 #email,#phone,#name,#address,#city,#country,#post, #reminder{
-    padding: 10px;
+    padding: 10px 30px ;
     margin: 5px;
     border-radius: 5px;
+    width: 80%;
     /* display: flex;
     flex-direction: row; */
 
@@ -110,24 +103,24 @@ h1{
 
 
 }
-#city{
-   
-}
+
+
 
 
 input{
     /* max-width: 500px; */
     /* width: 450px; */
     border-color: rgba(0, 0, 0, 0.2);
-    width:150px;
+    
 }
 
 i{
     color: rgba(0, 0, 0, 0.3);
     float: left;
     position: relative;
-    top: 15px;
-    left: 24px;
+    
+    top: 17px;
+    left: 27px;
 
 }
 #reminder{
@@ -142,12 +135,20 @@ i{
     width: 80px;
     height: 50px;
     border: none;
+    /* left: 50px; */
+    position:relative;
+    margin: auto;
+    margin-bottom: 10px;
+
     align-items: center;
-    display: inline;
+    display: flex;
+    padding: 7px;
+    
 
     
 }
-:hover{
+#btn-submit:hover{
+    background-color: brown;
 
 }
 .info-container{
@@ -158,4 +159,138 @@ i{
    
 
     
+}
+#country-container{
+    display: inline-block;
+    position: relative;
+}
+#post-code-container{
+    display: inline-block;
+    position: absolute;
+}
+
+
+.product-preview{
+    background-color: rgba(0, 0, 0, 0.3);
+    
+    /* max-width: 450; */
+    width: 40%;
+    margin:30px 20px 30px 10px;
+    
+    padding: 20px;
+    border-radius: 5px;
+    float: left;
+    
+    
+   
+
+    
+    
+
+}
+#bag{
+    position: relative;
+    display: inline-block;
+    display: flex;
+    margin: 10px;
+
+}
+#bag-pic{
+    width: 50%;
+    height: 800%;
+    
+    border-radius: 10px;
+    margin:3px;
+
+}
+h3{
+    position: relative;
+    
+    
+}
+.bag-price-c{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width:auto;
+    margin: auto;
+    
+    
+}
+.shoes-price-c{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+
+    margin: auto;
+    ri
+    
+    
+}
+#shoes{
+    position: relative;
+    display: inline-block;
+    display: flex;
+    margin: 10px;
+
+
+}
+#shoes-pic{
+    width: 50%;
+    height: 80%;
+    margin: 3px;
+    border-radius: 10px;
+}
+.button{
+    border: solid 1px rgba(0, 0, 0, 0.9);
+    background-color: white;
+    border-radius: 3px;
+    height: auto;
+    max-width:90px;
+    
+    
+    position: relative;
+    align-items: center;
+    margin: auto;
+    padding: 2%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+
+    
+}
+button{
+    border: none;
+    background-color: white;
+    color: black;
+    
+}
+#count2{
+    padding: 3px
+}
+#count1{
+    padding: 3px
+}
+#ship-price{
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    
+    
+}
+p{
+    display: inline-block;
+    /* text-align: justify; */
+}
+#total-price{
+    margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+.tt{
+    position: relative;
+}
+.pr{
+    float: right;
 }
